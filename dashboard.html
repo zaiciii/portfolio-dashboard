@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<body>
+
+<nav>
+  <h2>Dashboard </h2>
+  <ul>
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+    <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+    <li><a href="lab.html" class="nav-link">Lab</a></li>
+    <li><a href="exam.html" class="nav-link">Exam</a></li>
+  </ul>
+</nav>
+
+<h1 class="center">Uploaded Files</h1>
+
+<div class="dashboard-wrapper">
+  <section class="dashboard-section">
+    <h2>Quiz</h2>
+    <div id="quiz-uploads" class="uploads"></div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>Lab</h2>
+    <div id="lab-uploads" class="uploads"></div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>Exam</h2>
+    <div id="exam-uploads" class="uploads"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

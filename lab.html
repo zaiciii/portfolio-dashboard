@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab Upload</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+<nav>
+   <h2>Dashboard </h2>
+  <ul>
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+    <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+    <li><a href="lab.html" class="nav-link">Lab</a></li>
+    <li><a href="exam.html" class="nav-link">Exam</a></li>
+  </ul>
+</nav>
+
+<h1 id="upload-heading" class="center"></h1>
+
+<div class="form">
+  <input type="text" id="title" placeholder="Title">
+
+  <label>Upload File</label>
+  <input type="file" id="file">
+
+  <label>Upload Image (Proof)</label>
+  <input type="file" id="image" accept="image/*">
+
+  <!-- PREVIEW -->
+  <img id="preview" style="width:100%; border-radius:10px; display:none;">
+
+  <button onclick="upload()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
