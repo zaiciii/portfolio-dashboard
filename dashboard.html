@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
 <!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" alt="Preview">
+  <img id="lightbox-img">
 </div>
 
-<!-- NAVIGATION -->
+<body>
+
 <nav>
-  <h2>Dashboard</h2>
+  <h2>Dashboard </h2>
   <ul>
     <li><a href="index.html" class="nav-link">Home</a></li>
     <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
@@ -26,50 +24,25 @@
   </ul>
 </nav>
 
-<!-- PAGE TITLE -->
 <h1 class="center">Uploaded Files</h1>
 
 <div class="dashboard-wrapper">
-
-  <!-- QUIZ SECTION -->
   <section class="dashboard-section">
     <h2>Quiz</h2>
-
-    <div class="dashboard-gallery">
-      <img src="Quiz1.jpg" alt="Quiz 1" onclick="openLightbox(this.src)">
-      <img src="Quiz2.jpg" alt="Quiz 2" onclick="openLightbox(this.src)">
-      <img src="Quiz3.jpg" alt="Quiz 3" onclick="openLightbox(this.src)">
-    </div>
-
     <div id="quiz-uploads" class="uploads"></div>
   </section>
 
-  <!-- LAB SECTION -->
   <section class="dashboard-section">
     <h2>Lab</h2>
-
-    <div class="dashboard-gallery">
-      <img src="Lab1.jpg" alt="Lab 1" onclick="openLightbox(this.src)">
-    </div>
-
     <div id="lab-uploads" class="uploads"></div>
   </section>
 
-  <!-- EXAM SECTION -->
   <section class="dashboard-section">
     <h2>Exam</h2>
-
-    <div class="dashboard-gallery">
-      <img src="MidtermsExam.jpg" alt="Midterms Exam" onclick="openLightbox(this.src)">
-      <img src="Finals.jpg" alt="Finals Exam" onclick="openLightbox(this.src)">
-    </div>
-
     <div id="exam-uploads" class="uploads"></div>
   </section>
-
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
